@@ -1,0 +1,54 @@
+
+{% block content %}
+{%load static%}
+
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <style media="screen">
+    a:link {
+      text-decoration: none;
+    }
+
+    h6 {
+      text-align: center;
+    }
+
+    .row {
+      margin: 100px;
+    }
+  </style>
+</head>
+
+
+
+<div class="container">
+
+    <br>
+
+  {% if patients %}
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h6 class="panel-title">Your Reviews</h6>
+    </div>
+    <table class="table table-hover" id="dev-table">
+
+
+  {%else%}
+  <br><br><br>
+  <h4 style="text-align: center;color: red;">No Records Found !!!</h4>
+  {% endif %}
+<div>Hello teacher you have overall rating {{a}}%</div><br>
+<div>Hello teacher you have {{b}}% in patience</div><br>
+  <div>Hello teacher you have {{l}}% in loudness</div><br>
+  <div>Hello teacher you have {{e}}% in clarity</div><br>
+  <div>Hello teacher you have {{f}}% in partiality</div><br>
+  <div>Hello teacher you have {{g}}% punctuality</div><br>
+  <div>Hello teacher you have {{h}}% in timeliness</div><br>
+
+
+
+
+{% endblock content %}
