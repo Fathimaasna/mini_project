@@ -1,0 +1,65 @@
+{% extends "review/base_teacher.html" %}
+    {% block content %}
+    <style>
+    body {
+        background-image: url('../static/img/school.jpg');
+        background-size: 1500px 1000px;
+        background-color: #cccccc;
+        background-repeat: no-repeat; 
+        
+       }
+       .heading{
+        color:darkslateblue;
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+       }
+    </style>
+    <center><P class="heading">WADEEMA MOHAMMED KUTTI WOMEN'S COLLEGE</P>
+    <p><b>WADEEMA WOMENS ACADEMY (WWA) is one of the maiden attempts of Ta’aleemul Islam Trust, Kannur made towards spreading education in the society. Formerly it was known as Wadinnoor Islamic College.
+        It is a delegator step towards creating an ideal woman who can lead a generation into the success with the deep wakefulness that she got from the campus. As our vision envisages becoming a centre of excellence that natures leaders to develop an ideal society is not that easy task, we know. But we strive to make it happen. Absorbing energy from the rich and glorious tradition of our ideology, WWA tries to make our unique vision a reality.
+        WWA gives wings to the dreams of our students. Our well selected team is in full swing in the real practical working state. With a strong curriculum and syllabus, WWA’s focus is always on the practical side of education.
+        WWA believes in the spiritual being of human being. Our responsibility to the community is really very big. Bearing that in mind WWA strives for a better future of not only the students but also the parents and all those who are working in WWA. Well experienced scholars, specially selected faculty and well set team of academicians make WWA campus a very unique centre of synthesis of knowledge.</b></p>
+    <pre></pre>
+    
+     <h1 xmlns:text-align="http://www.w3.org/1999/xhtml" xmlns:text-align="http://www.w3.org/1999/xhtml">  </h1> 
+            <!-- {% for posts in posts %}
+                <article class="media content-section">
+                    <a class="mr-2" href="{% url 'user_reviews' posts.author.username %}"> <img class="rounded-circle article-img" src="{{ posts.author.profile.image.url }}"> </a>
+                    <div class="media-body">
+                        <div class="article-metadata">
+                            <h5>COLLEGE :<font color="green"> {{posts.instructor}} </font></h5>
+                            Ratings : {{posts.ratings}}
+                            <p>
+                                <small class="text-muted"> Date Posted : {{posts.date_posted|date:"F d, Y" }}</small>
+                            </p>
+                        </div>
+                        <h5>Course : {{posts.course}}</h5>
+                        <p class="article-content"> Comments : {{posts.comments}}</p>
+                    </div>
+                    <a class="mr-2" href="{% url 'review-detail' posts.id %}">View</a>
+                </article>
+            {% endfor %} -->
+            <!-- <div align="center">
+            {% if is_paginated %}
+                {% if page_obj.has_previous %}
+                    <a class="btn btn-outline-info mb-4" href="?page=1">First</a>
+                    <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+                {% endif %}
+
+                {% for num in page_obj.paginator.page_range %}
+                    {% if page_obj.number == num %}
+                        <a class="btn btn-info mb-4" href="?page={{ num }}">{{ num }}</a>
+                    {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                        <a class="btn btn-outline-info mb-4" href="?page={{ num }}">{{ num }}</a>
+                    {% endif %}
+                {% endfor %}
+
+                {% if page_obj.has_next %}
+                    <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.next_page_number }}">Next</a>
+                    <a class="btn btn-outline-info mb-4" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+                {% endif %}
+            {% endif %}
+            </div> -->
+
+{% endblock%}

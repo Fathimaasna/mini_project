@@ -1,0 +1,142 @@
+
+{% block content %}
+{%load static%}
+
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <!-- <style media="screen">
+    a:link {
+      text-decoration: none;
+    }
+
+    h6 {
+      text-align: center;
+    }
+
+    .row {
+      margin: 100px;
+    } -->
+  </style>
+</head>
+
+
+
+<div class="container">
+
+    <br>
+
+  {% if patients %}
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h6 class="panel-title">Your Reviews</h6>
+    </div>
+    <table id="customers">
+
+
+  {%else%}
+  <br><br><br>
+  <h4 style="text-align: center;color: red;">No Records Found !!!</h4>
+  {% endif %}
+<!-- <div>Hello teacher you have overall rating {{a}}%</div><br>
+<div> Your rating on partiality is: {{b}}% </div><br>
+  <div>Your rating on time management: {{l}}%</div><br>
+  <div>Your rating on which stimulates students interest in your subject:{{e}}%</div><br>
+  <div>Your rating on which the course objective and design are well formulated and explained:{{f}}</div><br>
+  <div>Your rating on which the demonstration in  depth knowledge of the subject :{{g}}%</div><br>
+  <div>Your rating on which challenged students to do their best work :{{h}}%</div><br> -->
+  <tr>
+    <td>Hello teacher you have overall rating</td>
+    <td>{{a}}%</td>
+    </tr>
+    <tr>
+      <td>Your rating on partiality is:</td>
+    <td>{{b}}%</td>
+    </tr>
+    <tr>
+      <td>Your rating on time management:</td>
+    <td>{{l}}%</td>
+    </tr>
+<tr>
+  <td>Your rating on which stimulates students interest in your subject:</td>
+    <td>{{e}}%</td>
+</tr>
+<tr>
+  <td>Your rating on which the course objective and design are well formulated and explained:</td>
+    <td>{{f}}%</td>
+</tr>
+<tr>
+  <td>Your rating on which the demonstration in  depth knowledge of the subject :</td>
+    <td>{{g}}%</td>
+</tr>
+<tr>
+  <td>Your rating on which challenged students to do their best work :</td>
+    <td>{{h}}%</td>
+</tr>
+</table>
+
+
+
+{% endblock content %}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+</style>
+</head>
+<!-- <body>
+
+<h1>A Fancy Table</h1>
+
+
+  <tr>
+    <th>Hello teacher you have overall rating</th>
+    <th>Your rating on partiality is:</th>
+    <th>Your rating on time management:</th>
+    <th>Your rating on which stimulates students interest in your subject:</th>
+    <th>Your rating on which the course objective and design are well formulated and explained:</th>
+    <th>Your rating on which the demonstration in  depth knowledge of the subject :</th>
+    <th>Your rating on which challenged students to do their best work :</th>
+
+  </tr>
+  <tr>
+    <td>{{a}}%</td>
+    <td>{{b}}%</td>
+    <td>{{l}}%</td>
+    <td>{{e}}%</td>
+    <td>{{f}}%</td>
+    <td>{{g}}%</td>
+    <td>{{h}}%</td>
+
+
+  </tr>
+</table>
+
+</body>
+</html> -->
